@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Form</title>
+    <link rel="stylesheet" href="./Style/Style.css">
+    <script src="./Script/Order.js" defer></script>
+</head>
+<body>
+    <h1>Let's Build your Pizza</h1>
+    <form id="pizza_form">
+        <div>
+            <label for="pizza-size">Pizza size: </label>
+            <select name="Select your size" id="pizza-size">
+                <option value="Select your size">Select your size</option>
+                <option value="Small">Small</option>
+                <option value="Medium">Medium</option>
+                <option value="Large">Large</option>
+            </select>
+        </div>
+        <div>
+            <label for="pizza-crust">Pizza crust: </label>
+            <select id="pizza-crust">
+                <option value="Select your crust">Select your crust</option>
+                <option value="Thin-crust">Thin Crust</option>
+                <option value="Regular">Regular</option>
+                <option value="Deep-dish">Deep Dish</option>
+            </select>
+        </div>
+        <div>
+            <label for="meat-toppings">Meat Toppings: </label>
+            <input type="checkbox"><label for="Pepronni">Pepronni</label>
+            <input type="checkbox"><label for="Tiny Cup Pepronni">Tiny Cup Pepronni</label>
+            <input type="checkbox"><label for="Becon">Becon</label>
+            <input type="checkbox"><label for="Sausage">Sausage</label>
+            <input type="checkbox"><label for="Ham">Ham</label>
+            <input type="checkbox"><label for="Sopresata">Sopresata</label>
+            <input type="checkbox"><label for="Anchovies">Anchovies</label>
+        </div>
+        <div>
+            <label for="veggie-topping">Veg Toppings: </label>
+            <input type="checkbox"><label for="Black Olives">Black Olives</label>
+            <input type="checkbox"><label for="Green Olives">Green Olives</label>
+            <input type="checkbox"><label for="Banana Peppers">Banana Peppers</label>
+            <input type="checkbox"><label for="Roasted Red Peppers">Roasted Red Peppers</label>
+            <input type="checkbox"><label for="Plant Based Peproni">Plant Based Peproni</label>
+            <input type="checkbox"><label for="Plant Based Sausage">Plant Based Sausage</label>
+            <input type="checkbox"><label for="Garlic">Garlic</label>
+            <input type="checkbox"><label for="Basil">Basil</label>
+            <input type="checkbox"><label for="Pineapple">Pineapple</label>
+        </div>
+        <div>
+            <label for="Mozzarella cheese">Mozzarella Cheese: </label>
+            <select name="cheese" id="Moz-cheese">
+                <option value="Select the cheese">Please select the cheese</option>
+                <option value="No cheese">No Cheese</option>
+                <option value="Regular">Regular</option>
+                <option value="Extra cheese">Extra Cheese</option>
+            </select>
+        </div>
+        <div>
+            <label for="additional-cheese">Additional Cheese: </label>
+            <input type="checkbox"><label for="Feta">Feta</label>
+            <input type="checkbox"><label for="Goat">Goat</label>
+            <input type="checkbox"><label for="Parmesian">Parmesian</label>
+            <input type="checkbox"><label for="Gorgonzola">Gorgonzola</label>
+        </div>
+        <div>
+            <label for="oregano">Herbs: </label>
+            <input type="checkbox"><label for="Oregano">Oregano</label>
+            <input type="checkbox"><label for="Chilli Flkes">Chilli Flkes</label>
+        </div>
+    </form>
+    <button id="Order">Order</button>
+    <div class="output">
+        <p id="description"></p>
+        <p id="student-info"></p>
+    </div>
+</body>
+</html>
